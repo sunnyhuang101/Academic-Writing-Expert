@@ -6,7 +6,7 @@ Developed a web-based academic writing system that assisted international resear
 - Created an interactive user interface by real-time parsing user input, making HTTP requests to communicate with backed corpus and displaying extracted linguistic information on demand with higher precision<br>
 
 ### Demo Video
-<a href="https://www.youtube.com/watch?v=62C2kA_UyeA&feature=youtu.be" target="_blank"><img src="./imgs/cover.png"  width="720" height="600" border="10"/></a>
+<a href="https://www.youtube.com/watch?v=62C2kA_UyeA&feature=youtu.be" target="_blank"><img src="./imgs/cover.png"  width="720" height="560" border="10"/></a>
 <br>
 
 
