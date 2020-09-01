@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>awe</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../static/main.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#nav" >
+    <nav class="navbar fixed-top navbar-toggleable navbar-light bg-faded" style="box-shadow: 0 0.1px 0.5px 1px gray;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span class="logo-first">Academic</span><span class="logo-mid">Writing</span><span class="logo-last">Expert</span></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="nav" class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#why">Why</a>
+                </li>
+<!--                 <li class="nav-item">
+                    <a class="nav-link" href="#feature">Features</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">Try It!</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="banner" style="background-image: url({{ url_for('static', filename='trees.jpg') }})">
+        <div id="banner-fg" class="d-flex flex-column  justify-content-between">
+            <div></div>
+            <div class="fading">
+                <h1 class="display-4 banner-text">Academic Writing Expert</h1>
+                <h2 class="lead banner-text">Have your own writing assistant!</h2>
+                <br>
+                <a class="btn btn-success btn-lg" href="#start">&nbsp;Get Started!&nbsp;<i class="fas fa-pencil-alt"></i></a>
+            </div>
+            <h2 class="banner-text">
+                <a class="fa fa-chevron-down fading" aria-hidden="true" href="#why" style="color: white; text-decoration: none;"></a>
+            </h2>
+        </div>
+    </header>
+
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col col-lg-8">
+                <section>
+                    <h2 id="why" class="display-4 navbar-offset">Why?</h2>
+                    <hr>
+                    <p>we provide you with a brand-new experience, to write efficiently and make sure your work is clear and formal </p>
+                    <p class="lead"><span class="logo-first">Academic</span><span class="logo-mid">Writing</span><span class="logo-last">Expert</span>, your own professional assistant for academic writing</p>
+                </section>
+                <section>
+                    <h2 id="start" class="navbar-offset display-4">Try It!</h2>
+                    <hr>
+                    <p>You can enter text here!  To get advice toward your writing!</p>
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-secondary btn-lg" name="btn_clear" id="btn_clear" style="margin: 5px;">clear</button>
+                    </div>
+                    <div contenteditable id="search" size=40 onmousemove="onMouse(event)" onkeyup="onKey(event)">
+                        <span tooltip_visible="true" tooltip="" flow="down" ></span>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                        <div class="row">
+                            <div style="width: 34%; text-align: left; padding: 0 0.8em;">&nbsp;Pattern&nbsp;</div>
+                            <div style="width: 66%; text-align: left; padding: 0 0.8em;">&nbsp;Advice&nbsp;</div>
+                        </div>
+                        </div>
+                        <ul class="list-group list-group-flush" id="result" style="display:inline;">
+                            <li class="list-group-item " style="text-align: left;">
+                                <span>
+                                    <div style="display: block;"></div>
+                                    <div class="progress" style="margin-top: 10px;">
+                                        <span style="display: block;width: 0%" class="progress-bar-striped bg-info" role="progressbar" ></span>
+                                    </div>
+                                </span>
+                                <ul class="list-group">
+                                    <li class="list-group-item result_node" onclick="itemClicked(event)"></li>
+                                    <li class="list-group-item result_node" onclick="itemClicked(event)"></li>
+                                    <li class="list-group-item example_node">
+                                        <button class="btn btn-secondary btn-lg btn_li" onclick="btnClicked(event)">show example</button>
+                                        <div class="example"></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class=".navbar-offset">
+        <section>
+            <h2 class="text-center">Services</h2>
+        </section>
+        <p class="text-center">writing suggestions  -   spelling checker   -   examples</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="../static/main.js"></script>
+</body>
+
+</html>
