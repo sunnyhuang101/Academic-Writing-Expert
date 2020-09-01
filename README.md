@@ -9,4 +9,12 @@ Developed a web-based academic writing system that assisted international resear
 <a href="https://www.youtube.com/watch?v=62C2kA_UyeA&feature=youtu.be" target="_blank"><img src="./imgs/cover.png"  width="720" height="540" border="10"/></a>
 <br>
 
+### Features
+##### Interactive User Interface and Real-Time Suggestions
+##### Autocomplete
+##### Sentence Example
+##### Spell checker
+
+### Algorithms
+
 
