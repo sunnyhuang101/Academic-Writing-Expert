@@ -20,8 +20,13 @@ A pop-up menu shows next-step writing suggestions based on user's current input 
 <img src="./imgs/interactive.png" width="700px" />
 <br>
 ##### Sentence Example
+Academic Writing Expert also provides users with sentence examples to show users how to use the grammar patterns well
+<img src="./imgs/example.png" width="700px" />
+<br>
 ##### Spell Checker
-
+Our system also inclues a spell checker to automatically detect if user's input text has any typo and offer three possible corrections
+<img src="./imgs/spell.png" width="700px" />
+<br>
 ### Algorithms
 
 
