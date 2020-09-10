@@ -11,11 +11,14 @@ Developed a web-based academic writing system that assisted international resear
 
 ### Features
 ##### Interactive User Interface
-Users can compose their academic writing in the text box. Suggestions of grammar patterns and collocations will show in a pop-up menu below
+Users can compose their academic writing in the text box. Suggestions of grammar patterns and collocations will show in a pop-up menu below <br>
 <img src="./imgs/interface.png" width="700px" />
 <br>
 
 ##### Real-Time Suggestions based on input text
+A pop-up menu shows next-step writing suggestions based on user's current input text. The left column are suggestions for grammar patterns, sorted from patterns with high to low frequencies in corpus. The right column is the corresponding collocations for the grammar pattern. Users can click on the collocation to autocomplete the collocation in their text.
+<img src="./imgs/interactive.png" width="700px" />
+<br>
 ##### Sentence Example
 ##### Spell Checker
 
