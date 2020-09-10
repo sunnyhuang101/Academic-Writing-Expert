@@ -10,10 +10,13 @@ Developed a web-based academic writing system that assisted international resear
 <br>
 
 ### Features
-##### Interactive User Interface and Real-Time Suggestions
-##### Autocomplete
+##### Interactive User Interface
+<img src="./imgs/interface.png" width="700px" />
+<br>
+
+##### Real-Time Suggestions based on input text
 ##### Sentence Example
-##### Spell checker
+##### Spell Checker
 
 ### Algorithms
 
