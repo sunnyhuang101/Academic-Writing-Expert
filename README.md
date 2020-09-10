@@ -11,6 +11,7 @@ Developed a web-based academic writing system that assisted international resear
 
 ### Features
 ##### Interactive User Interface
+Users can compose their academic writing in the text box. Suggestions of grammar patterns and collocations will show in a pop-up menu below
 <img src="./imgs/interface.png" width="700px" />
 <br>
 
