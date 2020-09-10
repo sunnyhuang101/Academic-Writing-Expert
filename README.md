@@ -21,7 +21,9 @@ A pop-up menu shows next-step writing suggestions based on user's current input 
 <br>
 ##### Sentence Example
 Academic Writing Expert also provides users with sentence examples to show users how to use the grammar patterns well
+<p align="left">
 <img src="./imgs/example.png" width="700px" />
+</p>
 <br>
 ##### Spell Checker
 Our system also inclues a spell checker to automatically detect if user's input text has any typo and offer three possible corrections
