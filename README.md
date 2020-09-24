@@ -38,3 +38,10 @@ Our system also inclues a spell checker to automatically detect if user's input 
 
 ### Experiment
 ##### 1. Grammar Patterns and Collocations filtering and extracting
+a. Lemmatized, find POS(Part-of-peech) for the sentences, and tokenize them using Genia Tagger <br>
+b. Convert those tokenized sentences into N-gram, and further convert them into "elements" <br>
+c. Extract possible grammar patterns based on existing grammars <br>
+<img src="./imgs/grammar.png"  />
+<br>
+
+ 

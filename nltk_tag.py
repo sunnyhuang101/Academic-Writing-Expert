@@ -39,12 +39,11 @@ print(lemmatize_sentence('As the Network Processors are used to implement increa
 #test IBO
 import nltk
 from nltk.corpus import conll2000
-# 加载训练文本中的NP块，返回的结果可以当作是一个列表，列表中的元素是Tree对象
-# 每一个Tree对象就是一个被分块的句子
+
 test_sents = conll2000.chunked_sents("train.txt", chunk_types=["NP"])
 print(nltk.chunk.tree2conlltags(test_sents[0]))
 #print(test_sents[0])
-# tree2conlltags函数可以将Tree对象转换为IBO标记格式的列表
+
 
 
 #test tree
