@@ -32,6 +32,8 @@ Our system also inclues a spell checker to automatically detect if user's input 
 <img src="./imgs/spell.png" width="700px" />
 <br>
 
-### Algorithms
+### Processing Structure
+<img src="./imgs/structure.png"  />
+<br>
 
 
