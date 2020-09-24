@@ -36,4 +36,5 @@ Our system also inclues a spell checker to automatically detect if user's input 
 <img src="./imgs/structure.png"  />
 <br>
 
-
+### Experiment
+##### 1. Grammar Patterns and Collocations filtering and extracting
