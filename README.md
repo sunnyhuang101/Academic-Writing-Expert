@@ -43,5 +43,9 @@ b. Convert those tokenized sentences into N-gram, and further convert them into 
 c. Extract possible grammar patterns based on existing grammars <br>
 <img src="./imgs/grammar.png"  />
 <br>
+d. Filter the valid grammar patterns based on statistical analysis
+e. Use the N-grams and the valid grammar patterns to find possible collocations
+f. Filter the valid collocations based on statistical analysis
+g. Store the valid grammar patterns and their corresponding valid collocations to our corpus
 
  
