@@ -38,7 +38,7 @@ Our system also inclues a spell checker to automatically detect if user's input 
 
 ### Experiment
 ##### 1. Grammar Patterns and Collocations filtering and extracting
-a. Lemmatized, find POS(Part-of-peech) for the sentences, and tokenize them using Genia Tagger <br>
+a. Lemmatized, find POS(Part-of-peech) for the sentences from CiteSeerX, and tokenize them using Genia Tagger <br>
 b. Convert those tokenized sentences into N-gram, and further convert them into "elements" <br>
 c. Extract possible grammar patterns based on existing grammars <br>
 <img src="./imgs/grammar.png"  />
@@ -49,4 +49,10 @@ f. Filter the valid collocations based on statistical analysis<br>
 g. Store the valid grammar patterns and their corresponding valid collocations to our corpus<br>
 <img src="./imgs/collocations.png"  />
 <br>
+##### 2. Spell Checker
+a. Training data is from CiteSeer papers <br>
+b. Use Noisy-Channel model and do some permutation for vocabularies including insert, delete, replace and transpose
+c. Combine the result from step b with often-confused-words list from alphaDictionary to compute some candidates
+d. Calculate the most possible correct word as suggestion of spell checker with Maximum Likehood Estimation
+
  
