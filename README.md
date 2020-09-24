@@ -51,8 +51,10 @@ g. Store the valid grammar patterns and their corresponding valid collocations t
 <br>
 ##### 2. Spell Checker
 a. Training data is from CiteSeer papers <br>
-b. Use Noisy-Channel model and do some permutation for vocabularies including insert, delete, replace and transpose
-c. Combine the result from step b with often-confused-words list from alphaDictionary to compute some candidates
-d. Calculate the most possible correct word as suggestion of spell checker with Maximum Likehood Estimation
+b. Use Noisy-Channel model and do some permutation for vocabularies including insert, delete, replace and transpose<br>
+c. Combine the result from step b with often-confused-words list from alphaDictionary to compute some candidates<br>
+d. Calculate the most possible correct word as suggestion of spell checker with Maximum Likehood Estimation<br>
+<img src="./imgs/spellchecker.png"  />
+<br>
 
  
